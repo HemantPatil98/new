@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'shop/main.html'%}
+{% load static %}
+{% block content_block %}
+
+<h3>register</h3>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <input type="submit" name="Register" value="Register">
+</form>
+
+{% endblock %}
